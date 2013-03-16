@@ -1,0 +1,21 @@
+{
+  "name": "tapinto",
+  "description": "Tap into classes and methods. Aspect Oriented Programming for nodejs.",
+  "version": "0.0.1",
+  "main": "./tap.js",
+  "author" : "Thomas Coats",
+  "maintainers" : [
+      {
+          "name" : "Thomas Coats",
+          "email" : "github@voodoolabs.net"
+      }
+  ],
+  "repository" : {
+      "type" : "git",
+      "url" : "https://github.com/tcoats/tapinto.git"
+  },
+  "homepage": "https://github.com/tcoats/tapinto",
+  "dependencies": {
+    "underscore": "1.x"
+  }
+}
