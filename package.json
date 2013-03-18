@@ -1,7 +1,7 @@
 {
   "name": "tapinto",
   "description": "Tap into classes and methods. Aspect Oriented Programming for nodejs.",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "./tap.js",
   "author" : "Thomas Coats",
   "maintainers" : [

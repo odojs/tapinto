@@ -49,7 +49,8 @@ tapobject = (target, delegate) ->
   result
 
 tapfunction = (target, fn, options) ->
-  result = fn
+  result = () ->
+    fn.apply target, arguments
   
   if options.fn? and _.isFunction options.fn
     result = tapfn target, result, options.delegate, options.fn
