@@ -1,10 +1,5 @@
-Tap into classes and methods.
-=============================
-
-Example (CoffeeScript)
-----------------------
-
-dropboxtap.coffee
+Tap into classes and methods
+----------------------------
 
 ```coffeescript
 dropbox = require 'dropbox'
@@ -28,7 +23,6 @@ class Client extends tapinto.Class(dropbox.Client)
 module.exports =
     Client: Client
 ```
-
 
 
 What is the problem?
