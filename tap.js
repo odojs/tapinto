@@ -84,7 +84,9 @@
 
   tapfunction = function(target, fn, options) {
     var result;
-    result = fn;
+    result = function() {
+      return fn.apply(target, arguments);
+    };
     if ((options.fn != null) && _.isFunction(options.fn)) {
       result = tapfn(target, result, options.delegate, options.fn);
     }
