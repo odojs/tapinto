@@ -63,6 +63,10 @@ tapfunction = (target, fn, options) ->
 tapfn = (target, targetfn, delegate, delegatefn) ->
   () ->
     result = delegatefn.apply delegate, arguments
+    
+    if result is false
+      return
+      
     if result? and _.isFunction result
       tapped = tapcbplain target, targetfn, delegate, result
       tapped.apply delegate, arguments

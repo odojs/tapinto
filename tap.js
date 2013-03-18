@@ -100,6 +100,7 @@
     return function() {
       var result, tapped;
       result = delegatefn.apply(delegate, arguments);
+      if (result === false) return;
       if ((result != null) && _.isFunction(result)) {
         tapped = tapcbplain(target, targetfn, delegate, result);
         tapped.apply(delegate, arguments);
