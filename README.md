@@ -1,5 +1,5 @@
-Tap into classes and methods. Aspect Oriented Programming for nodejs.
-=====================================================================
+Tap into classes and methods.
+=============================
 
 Example (CoffeeScript)
 ----------------------
@@ -33,6 +33,8 @@ What is the problem?
 --------------------
 
 Occasionally the functionality of a library is not enough, there are a few more things you want it to do. You could jump in and fork the project, but often your additions are not in line with the project direction. A mechanism to wrap and tap into the implementation of a library is useful.
+
+Aspect Oriented Programming for nodejs.
 
 
 How tapinto solves this problem
