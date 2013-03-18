@@ -6,26 +6,28 @@ Example (CoffeeScript)
 
 dropboxtap.coffee
 
-    dropbox = require 'dropbox'
-    tapinto = require 'tapinto'
+```coffeescript
+dropbox = require 'dropbox'
+tapinto = require 'tapinto'
 
-    class Client extends tapinto.Class(dropbox.Client)
-        constructor: (@options) ->
-            super
-                    
-        readfile: (path, options, callback) ->
-            console.log 'Intercepted a file read'
-            (error, content, stat, range) ->
-                console.log 'Intercepted the results of a file read'
-        
-        #readdir: (path, options, callback) ->
-        #  (error, files, dirstat, filestats) ->
-        #
-        #stat: (path, options, callback) ->
-        #  (error, stat, filestats) ->
+class Client extends tapinto.Class(dropbox.Client)
+    constructor: (@options) ->
+        super
+                
+    readfile: (path, options, callback) ->
+        console.log 'Intercepted a file read'
+        (error, content, stat, range) ->
+            console.log 'Intercepted the results of a file read'
+    
+    #readdir: (path, options, callback) ->
+    #  (error, files, dirstat, filestats) ->
+    #
+    #stat: (path, options, callback) ->
+    #  (error, stat, filestats) ->
 
-    module.exports =
-        Client: Client
+module.exports =
+    Client: Client
+```
 
 
 
